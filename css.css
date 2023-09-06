@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+}
+
+body .button{
+    background: #1d61dd;
+    color: blue;
+}
