@@ -9,6 +9,13 @@ function adicionarNumero() {
         numeros.sort(function(a, b) {
             return a - b;
         });
+
+        atualizarLista();
+        inputNumero.value = "";
+    } else {
+        alert("Digite um número válido.");
+    }
+}
  
 const frm = document.createElement("label");
 const frm = document.querySelector("form");
