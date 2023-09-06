@@ -16,16 +16,14 @@ function adicionarNumero() {
         alert("Digite um número válido.");
     }
 }
- 
-const frm = document.createElement("label");
-const frm = document.querySelector("form");
-const dvQuadro = document.querySelector("#divQuadro");
 
-const 
+function atualizarLista() {
+    var lista = document.getElementById("numeroLista");
+    lista.innerHTML = "";
 
-frm.addEvenListener("submit", (e) =>{
-    e.preventDefault();
-
-    const tarefa = frm.inNumero.value;
-    const h5 = document.createElement("h5");
-});
+    for (var i = 0; i < numeros.length; i++) {
+        var item = document.createElement("li");
+        item.textContent = numeros[i];
+        lista.appendChild(item);
+    }
+}
